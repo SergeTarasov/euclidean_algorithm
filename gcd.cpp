@@ -3,6 +3,7 @@
 #include <iostream>
 
 //Extended Euclidean algorithm
+//PGCD - Polynomial Greatest Common Divisor
 int pgcd (int a, int b, int & x, int & y)
 {
 
