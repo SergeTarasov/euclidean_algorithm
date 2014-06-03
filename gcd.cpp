@@ -4,11 +4,9 @@
 
 //Extended Euclidean algorithm
 //PGCD - Polynomial Greatest Common Divisor
-int pgcd (int a, int b, int & x, int & y)
-{
+int pgcd (int a, int b, int & x, int & y){
 
-    if (a == 0)
-    {
+    if (a == 0){
         x = 0, y = 1;
         return b;
     }
@@ -24,8 +22,7 @@ int pgcd (int a, int b, int & x, int & y)
 
 //Euclidean algorithm:
 //GCD - Greatest Common Divisor
-int gcd (int a, int b)
-{
+int gcd (int a, int b){
 
     if (b == 0) return a;
 
@@ -33,14 +30,12 @@ int gcd (int a, int b)
 }
 
 //Lowest common denominator
-int lcd (int a, int b)
-{
+int lcd (int a, int b){
     return a / gcd (a, b) * b;
 }
 
 //binary raising to power
-int binpow (int a, int n)
-{
+int binpow (int a, int n){
 
     int res = 1;
 
